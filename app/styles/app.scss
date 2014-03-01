@@ -1,0 +1,33 @@
+@mixin background-size($arguments) {
+  -webkit-background-size: $arguments;
+  -moz-background-size: $arguments;
+  -o-background-size: $arguments;
+  background-size: $arguments;
+}
+
+body {
+  background-color: #f1f1f1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  @include background-size(cover);
+}
+
+.hero-unit {
+  color: black;
+}
+
+.packages {
+  .span4 {
+    padding-bottom: 20px;
+  }
+}
+
+.package {
+  background: rgba(245, 222, 179, 0.4);
+  color: black;
+  padding: 5px 10px;
+  small {
+    color: rgb(0, 68, 204);
+  }
+}

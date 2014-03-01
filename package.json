@@ -1,0 +1,44 @@
+{
+  "author": "Bloc",
+  "name": "bloc-rdio-skeleton",
+  "description": "Starter skeleton for Bloc's Rdio project.",
+  "version": "0.0.1",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.6.10 || 0.8 || 0.9 || 0.10"
+  },
+  "scripts": {
+    "start": "brunch watch --server"
+  },
+  "dependencies": {
+    "javascript-brunch": "> 1.0 < 1.5",
+    "coffee-script-brunch": "> 1.0 < 1.5",
+    "css-brunch": "> 1.0 < 1.5",
+    "stylus-brunch": "> 1.0 < 1.5",
+    "jade": "*",
+    "sass-brunch": "1.8.0",
+    "clean-css-brunch": "> 1.0 < 1.5",
+    "coffeelint-brunch": "> 1.0 < 1.5",
+    "ugly-blanket-brunch": "~1.5.3",
+    "async": "*",
+    "socket.io": "*",
+    "express": "*",
+    "debug": "~0.7.2",
+    "ansi-color": "*",
+    "date-utils": "*",
+    "growl": "*",
+    "cordell": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon": "*",
+    "sinon-chai": "*",
+    "supertest": "*",
+    "blanket": "*"
+  }
+}

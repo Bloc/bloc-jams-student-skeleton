@@ -1,0 +1,9 @@
+mixin packages(packages)
+  .row.packages
+    - each package in packages
+      .span4
+        .package
+          h2= package.name 
+            small  v#{package.version}
+          p!= package.desc
+          p: a(class="btn", href="#{package.url}", target="_blank") Learn more
