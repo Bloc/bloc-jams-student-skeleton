@@ -1,19 +1,25 @@
 exports.config =
     # See docs at http://brunch.readthedocs.org/en/latest/config.html.
-    coffeelint:
-        pattern: /^.*\.coffee$/
-        options:
-            indentation:
-                value: 2
-                level: "error"
+
+    modules:
+        wrapper: false
+
     plugins:
         uglify:
             pattern: /\.js$/
+
+        coffeelint:
+            pattern: /^.*\.coffee$/
+            options:
+                indentation:
+                    value: 2
+                    level: "error"
 
     files:
         javascripts:
             joinTo:
                 'javascripts/app.js': /^app/
+                'javascripts/vendor.js': /^vendor\/scripts/
             order:
                 # Files in `vendor` directories are compiled before other files
                 # even if they aren't specified in order.
@@ -29,7 +35,7 @@ exports.config =
 
         stylesheets:
             joinTo:
-                'stylesheets/app.css': /^(app|vendor(\/|\\)(?!test))/
+                'stylesheets/app.css': /^(app\/styles|vendor\/styles)/
             order:
                 before: [
                     'vendor/styles/bootstrap-theme.css'
@@ -57,6 +63,8 @@ exports.config =
                     indentation:
                         value: 2
                         level: "error"
+                    max_line_length:
+                        level: "ignore"
         tester:
             enabled: on
             mocha:

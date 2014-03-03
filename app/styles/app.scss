@@ -1,33 +1,20 @@
-@mixin background-size($arguments) {
-  -webkit-background-size: $arguments;
-  -moz-background-size: $arguments;
-  -o-background-size: $arguments;
-  background-size: $arguments;
+@import "../../vendor/styles/bourbon/bourbon";
+
+@import "imports/variables";
+@import "imports/fonts";
+
+@import "layouts/player";
+@import "album";
+@import "album_collection";
+
+body, html {
+  // Allows us to set the min-height for child elements.
+  height: 100%;
 }
 
-body {
-  background-color: #f1f1f1;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  @include background-size(cover);
+// Want the edges for Bootstrap navbars to be non-rounded.
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
 }
 
-.hero-unit {
-  color: black;
-}
-
-.packages {
-  .span4 {
-    padding-bottom: 20px;
-  }
-}
-
-.package {
-  background: rgba(245, 222, 179, 0.4);
-  color: black;
-  padding: 5px 10px;
-  small {
-    color: rgb(0, 68, 204);
-  }
-}
