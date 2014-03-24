@@ -31,7 +31,8 @@
     "debug": "~0.7.2",
     "ansi-color": "0.2",
     "date-utils": "1.2",
-    "cordell": "0.1"
+    "cordell": "0.1",
+    "growl": "*"
   },
   "devDependencies": {
     "mocha": "*",
