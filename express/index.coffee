@@ -30,7 +30,7 @@ app.get '/', controllers.landing()
 app.get '/collection', controllers.collection()
 app.get '/album', controllers.album('Album View')
 app.get '/test', controllers.test('Mocha Tests')
-app.get '/users', controllers.user('User')
+app.get '/user', controllers.user('User')
 app.get '/practice', controllers.practice('Practice your HTML')
 
 ### Default 404 middleware ###
