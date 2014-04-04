@@ -1,9 +1,6 @@
 exports.config =
     # See docs at http://brunch.readthedocs.org/en/latest/config.html.
 
-    modules:
-        wrapper: false
-
     plugins:
         uglify:
             pattern: /\.js$/
