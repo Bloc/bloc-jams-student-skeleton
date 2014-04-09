@@ -25,6 +25,7 @@ exports.config =
                     'vendor/scripts/jquery-1.9.1.js'
                     'vendor/scripts/underscore-1.4.4.js'
                     'vendor/scripts/jquery-2.1.0.js'
+                    'vendor/scripts/angular.js'
                 ]
                 after: [
                     'vendor/scripts/brunch-reload.js'
