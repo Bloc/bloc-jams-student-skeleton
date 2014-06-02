@@ -1,5 +1,5 @@
 exports.config =
   view:
-    engine: 'jade'
+    engine: 'html'
   cookie:
     secret: 'Express Brunch Rules!'

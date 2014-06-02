@@ -3,5 +3,12 @@
   "version": "0.0.1",
   "main": "public/app.js",
   "dependencies": {},
-  "overrides": {}
+  "overrides": {},
+  "devDependencies": {
+    "angular": "1.2.15",
+    "angular-mocks": "1.2.15",
+    "jquery": "~2.1.1",
+    "angular-ui-router": "~0.2.10",
+    "buzz": "~1.1.0"
+  }
 }

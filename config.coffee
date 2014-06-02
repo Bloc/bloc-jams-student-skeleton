@@ -1,4 +1,4 @@
-exports.config =
+  exports.config =
     # See docs at http://brunch.readthedocs.org/en/latest/config.html.
 
     plugins:
@@ -34,12 +34,6 @@ exports.config =
         stylesheets:
             joinTo:
                 'stylesheets/app.css': /^(app\/styles|vendor\/styles)/
-            order:
-                before: [
-                    'vendor/styles/bootstrap-theme.css'
-                    'vendor/styles/bootstrap.css'
-                    'vendor/styles/font-awesome.css'
-                ]
         templates:
             joinTo: 'javascripts/app.js'
     server:
@@ -63,9 +57,3 @@ exports.config =
                         level: "error"
                     max_line_length:
                         level: "ignore"
-        tester:
-            enabled: on
-            mocha:
-                pattern: /^.*_test\.coffee$/
-                options:
-                    reporter:'spec'

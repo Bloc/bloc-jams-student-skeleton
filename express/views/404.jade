@@ -1,14 +1,30 @@
-extends layouts/base_layout
+doctype html
+html(data-ng-app="BlocJams")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    <title>Page Not found!</title>
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width")
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/buzz/1.1.0/buzz.min.js"></script>
+    <script src="/javascripts/app.js"></script>
+    script.
+     require('scripts/app');
 
-block body
+body
   .container
-    .panel.panel-warning
-      .panel-heading
-        | Page not found
-      .panel-body
-        h1 Sorry, but the page you were trying to view does not exist.
-        p It looks like this was the result of either:
-        ul
-          li a mistyped address
-          li an out-of-date link
+      h1 Page not found
+      h2 Sorry, but the page you were trying to view does not exist.
+      p It looks like this was the result of either:
+      ul
+        li a mistyped address
+        li an out-of-date link
 
