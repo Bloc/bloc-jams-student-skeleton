@@ -1,1 +1,2 @@
 Practicing git, github, and checkin/push/pull structure.
+Adding content for a new commit.
