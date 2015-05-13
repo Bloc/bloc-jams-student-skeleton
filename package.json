@@ -17,6 +17,7 @@
     "test": "karma start test/karma.conf.js"
   },
   "dependencies": {
+    "tmp": "0.0.23",
     "brunch": "1.7.13",
     "javascript-brunch": "1.5",
     "coffee-script-brunch": "1.5",
